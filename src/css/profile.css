@@ -1,0 +1,163 @@
+#profile {
+	margin-bottom: 60px;
+	padding-top: 70px;
+}
+
+/* Card Profile */
+.card-profile {
+	border-radius: 10px;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	background-color: #202749;
+	margin: 0 auto;
+}
+
+.img-profile {
+	width: 100%;
+	height: 240px;
+	object-fit: cover;
+	border-radius: 10px 10px 0 0;
+}
+
+.username {
+	text-align: center;
+	background: rgb(78 101 141 / 63%);
+	color: #f1f1f1;
+	height: 65px;
+	width: 100%;
+	padding: 17px;
+	font-family: 'Retro Gaming', 'Alagard';
+	font-size: 20px;
+	display: block;
+}
+
+.card-body {
+	padding: 20px 20px 40px;
+}
+
+.profile-contact {
+	color: #fff;
+	display: flex;
+	font-weight: 700;
+	gap: 4px;
+	font-size: 14px;
+}
+
+.profile-contact address {
+	margin: 0;
+}
+
+.btn-edit-profile {
+	padding: 10px 0;
+	font-size: 15px;
+	transition: 300ms ease;
+	border-radius: 50px;
+	color: #fff;
+	border: 2px solid #47b2e4;
+	background-color: rgba(71, 178, 228, 0.5);
+}
+
+.btn-edit-profile:hover {
+	color: #fff;
+	background-color: rgb(49, 169, 225);
+}
+
+/* Tablist  / Event / Activity*/
+.wrapper-tablist {
+	margin-top: 76px;
+}
+
+.wrapper-tablist .nav-tabs {
+	border: 1px solid #dee2e6;
+	background: #f7f7f7;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	padding-top: 10px;
+}
+
+.wrapper-tablist .nav-link {
+	color: #495057;
+}
+
+.wrapper-tablist .nav-link:hover {
+	color: #126efd;
+}
+
+.wrapper-tablist .nav-link.active {
+	color: #126efd;
+	background-color: #fff;
+}
+
+.wrapper-card-activity {
+	display: grid;
+	gap: 24px;
+	margin-top: 24px;
+}
+
+.card-activity {
+	position: relative;
+	border-radius: 10px;
+	background-color: #fff;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.title-card-activity {
+	position: absolute;
+	top: 0;
+	background: rgb(78 101 141 / 50%);
+	color: #f1f1f1;
+	width: 100%;
+	padding: 20px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	font-size: 24px;
+	text-align: center;
+}
+
+.img-card-activity {
+	display: block;
+	height: 160px;
+	object-fit: contain;
+	width: 100%;
+	background-image: linear-gradient(#85bdec, #f3e2d8);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.activity-name {
+	text-align: center;
+	color: #ffffff;
+	background: rgb(32 39 73);
+	display: block;
+	padding: 18px;
+	font-family: 'Retro Gaming';
+}
+
+.wrapper-description-activity {
+	padding: 20px 16px;
+	font-weight: 700;
+}
+
+.description-activity {
+	height: 80px;
+	text-align: center;
+}
+
+@media (min-width: 328px) {
+	.card-profile {
+		width: 320px;
+	}
+
+	.profile-contact {
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 768px) {
+	.img-card-tablist {
+		height: 160px;
+	}
+
+	.wrapper-card-activity {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
