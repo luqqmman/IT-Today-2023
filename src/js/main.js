@@ -130,3 +130,27 @@ window.addEventListener('load', () => {
 		mirror: false,
 	});
 });
+
+// paralax
+window.addEventListener('scroll', heroBackgroundParalaxDown);
+window.addEventListener('scroll', heroInnerParalaxDown)
+
+
+function heroBackgroundParalaxDown() {
+	const hero = document.getElementById("hero");
+	const speed = 3;
+	let yPos = window.scrollY / speed;
+	let coords = `left calc(200% + ${yPos}px)`;
+	
+	hero.style.backgroundPosition = coords;
+}
+
+function heroInnerParalaxDown() {
+	const inner = document.getElementById("hero-inner");
+	const speed = 2;
+	let yPos = window.scrollY / speed;
+	let tfm = `translate(0, ${yPos}px)`;
+	
+	inner.style.transform = tfm;
+	inner.style.opacity = `${1-0.0015*window.scrollY}`;
+}
