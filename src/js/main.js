@@ -132,18 +132,18 @@ window.addEventListener('load', () => {
 });
 
 // paralax
-window.addEventListener('scroll', heroBackgroundParalaxDown);
+// window.addEventListener('scroll', heroBackgroundParalaxDown);
 window.addEventListener('scroll', heroInnerParalaxDown)
 
 
-function heroBackgroundParalaxDown() {
-	const hero = document.getElementById("hero");
-	const speed = 3;
-	let yPos = window.scrollY / speed;
-	let coords = `left calc(200% + ${yPos}px)`;
+// function heroBackgroundParalaxDown() {
+// 	const hero = document.getElementById("hero");
+// 	const speed = 3;
+// 	let yPos = window.scrollY / speed;
+// 	let coords = `left calc(200% + ${yPos}px)`;
 	
-	hero.style.backgroundPosition = coords;
-}
+// 	hero.style.backgroundPosition = coords;
+// }
 
 function heroInnerParalaxDown() {
 	const inner = document.getElementById("hero-inner");
